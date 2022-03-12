@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Return Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="heading">
+        <h1>Cash Return Manager</h1>
+        <hr>
+    </nav>
+    <div class="container">
+        <p class="description">Enter the bill amount and cash given by the customer and know number of notes to return.
+        </p>
+        <form onsubmit="return false">
+            <div class="bill-input">
+                <label for="bill-amount">Bill Amount:</label>
+                <input id="bill-amount" type="number" min="1" required>
+            </div>
+            <div class="cash-input">
+                <label for="cash-given">Cash Given:</label>
+                <input id="cash-given" type="number" min="1" required>
+            </div>
+            <button id="check-button" type="submit">Check</button>
+        </form>
+
+        <div id="error-message"></div>
+
+        <div class="change-table">
+            <table class="cash-return">
+                <caption>Return Change</caption>
+                <tr>
+                    <th>No. of notes</th>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                </tr>
+                <tr>
+                    <th>Notes</th>
+                    <td>2000</td>
+                    <td>500</td>
+                    <td>200</td>
+                    <td>100</td>
+                    <td>50</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

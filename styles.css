@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --primary-color: #004d40;
+    --secondary-color: #00796b;
+    --third-color: #009688;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color), var(--third-color));
+    color: white;
+    text-align: center;
+}
+
+.heading{
+    padding: 2rem;
+}
+
+.heading h1{
+    font-size: 2rem;
+}
+
+.description{
+    font-size: larger;
+}
+
+.container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+
+label{
+    display: block;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+input{
+    font-size: 1rem;
+    width: 50%;
+    padding: 0.7rem;
+    border: 3px solid var(--primary-color);
+    border-radius: 0.75rem;
+}
+
+#check-button{
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    background-color: white;
+    border: 3px solid var(--primary-color);
+    border-radius: 5rem;
+}
+
+#error-message{
+    padding: 1rem;
+}
+
+.change-table{
+    margin: auto;
+}
+
+table,
+th,
+td {
+    padding: 0.5rem;
+    background-color: white;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-collapse: collapse;
+    max-width: 100%;
+    table-layout: fixed;
+}
+
+caption{
+    font-size: larger;
+    padding: 1rem;
+    color: white;
+}
+
