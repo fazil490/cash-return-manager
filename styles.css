@@ -6,79 +6,115 @@
     --third-color: #009688;
 }
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(to right, var(--primary-color), var(--secondary-color), var(--third-color));
     color: white;
-    text-align: center;
+    min-width: 100vw;
 }
 
 .heading{
-    padding: 2rem;
+    font-size: larger;
+    text-align: center;
+    padding: 1.5rem;
+    top: 0;
 }
 
-.heading h1{
-    font-size: 2rem;
+.rule{
+    background-color: #fff;
+    width: 100%;
+    height: 2px;
+}
+
+.container{
+    margin: 3rem auto 5rem;
+    text-align: center;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
 }
 
 .description{
     font-size: larger;
 }
 
-.container{
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    width: 50vw;
-}
-
 label{
-    display: block;
-    padding: 1rem;
-    font-size: 1.2rem;
+    margin: 1rem;
 }
 
 input{
-    font-size: 1rem;
-    width: 50%;
     padding: 0.7rem;
-    border: 3px solid var(--primary-color);
+    width: 40%;
+    font-size: 1rem;
+    border: 2px solid var(--primary-color);
+    margin: auto;
     border-radius: 0.75rem;
 }
 
 #check-button{
-    padding: 1rem 2rem;
-    margin-top: 2rem;
-    font-size: 1.2rem;
-    color: var(--primary-color);
-    background-color: white;
-    border: 3px solid var(--primary-color);
-    border-radius: 5rem;
-}
-
-#error-message{
-    padding: 1rem;
-}
-
-.change-table{
-    margin: auto;
-}
-
-table,
-th,
-td {
-    padding: 0.5rem;
-    background-color: white;
-    color: var(--primary-color);
+    font-size: 15px;
+    border-radius: 3rem;
     border: 2px solid var(--primary-color);
+    text-align: center;
+    max-width: 140px;
+    padding: 0.6rem 1.2rem;
+    margin: 1rem auto;
+}
+
+table, tr, td{
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    border: 2px solid #fff;
     border-collapse: collapse;
     max-width: 100%;
     table-layout: fixed;
 }
 
 caption{
-    font-size: larger;
     padding: 1rem;
-    color: white;
 }
 
+
+@media screen and (min-width: 1000px) {
+    table {
+        margin-left: 2.7rem;
+        width: 90%
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .change-table {
+        margin-left: -2.65rem;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .container {
+        font-size: large;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .description {
+        margin: 0 -3rem;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .change-table {
+        margin-left: -7rem;
+    }
+
+}
