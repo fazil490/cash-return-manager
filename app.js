@@ -1,6 +1,7 @@
 const billAmount = document.querySelector("#bill-amount");
 const cashGiven = document.querySelector("#cash-given");
 const checkButton = document.querySelector("#check-button");
+const balanceAmount = document.querySelector('#balance-amount');
 const message = document.querySelector("#error-message");
 const noOfNotes = document.querySelectorAll(".no-of-notes");
 const changeTable = document.querySelector(".change-table");
@@ -19,6 +20,7 @@ checkButton.addEventListener("click", function validateBillAndCashAmount() {
         if (cashGivenValue > billAmountValue) {
             const amountToBeReturned = cashGivenValue - billAmountValue;
             calculateChange(amountToBeReturned);
+            balanceAmount.innerText = "Balance amount = " + amountToBeReturned;
             changeTable.style.display = "block";
         } else if (cashGivenValue === billAmountValue) {
             showMessage("No change to return.");

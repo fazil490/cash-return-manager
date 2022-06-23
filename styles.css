@@ -70,6 +70,13 @@ input{
     margin: 1rem auto;
 }
 
+#balance-amount {
+    width: 70%;
+    margin: auto;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 table, tr, td{
     margin: 0.5rem auto;
     padding: 0.5rem;
@@ -82,6 +89,7 @@ table, tr, td{
 caption{
     padding: 1rem;
 }
+
 
 
 @media screen and (min-width: 1000px) {
@@ -114,7 +122,7 @@ caption{
 
 @media screen and (max-width: 500px) {
     .change-table {
-        margin-left: -7rem;
+        margin-left: -7.4rem;
     }
 
 }
